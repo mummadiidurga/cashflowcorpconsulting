@@ -229,9 +229,10 @@ h3 { font-size: 1.3rem; }
     align-items: center;
     padding: 120px 0 80px;
     border-bottom: 1px solid var(--border);
+    background-color: #0a1929;
     background-image:
-        linear-gradient(135deg, rgba(10, 24, 47, 0.88) 0%, rgba(15, 30, 60, 0.75) 50%, rgba(20, 40, 80, 0.55) 100%),
-        url('images/hero-bg.jpg');
+        linear-gradient(135deg, rgba(10, 24, 47, 0.75) 0%, rgba(15, 30, 60, 0.65) 50%, rgba(20, 40, 80, 0.45) 100%),
+        url('images/hero.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -247,9 +248,11 @@ h3 { font-size: 1.3rem; }
 
 @media (max-width: 768px) {
     .hero {
-        min-height: 90vh;
+        min-height: auto;
         padding: 100px 0 60px;
         background-attachment: scroll;
+        background-size: contain;
+        background-position: center center;
     }
 }
 
@@ -695,8 +698,8 @@ html.dark .hero-mini-stat strong { color: #60a5fa; }
     .nav-links, .nav-cta { display: none; }
     .mobile-toggle { display: flex; }
     .mobile-menu { top: 64px; }
-    .hero { min-height: auto; padding: 100px 0 60px; }
-    .hero-grid { padding-top: 1rem; padding-bottom: 1rem; }
+    .hero { min-height: 85vh; padding: 100px 1.5rem 60px; }
+    .hero-grid { padding-top: 1rem; padding-bottom: 1rem; grid-template-columns: 1fr; }
     .hero-title { font-size: clamp(1.8rem, 8vw, 2.6rem); }
     .hero-sub { font-size: 0.98rem; }
     .hero-buttons { flex-direction: column; align-items: stretch; }
@@ -718,6 +721,7 @@ html.dark .hero-mini-stat strong { color: #60a5fa; }
     .container, .partners-container { padding: 0 1rem; }
     .nav-container { padding: 0.85rem 0; }
     .nav-logo img { height: 30px; }
+    .hero { min-height: 80vh; padding: 90px 1rem 50px; }
     .hero-title { font-size: 1.75rem; }
     .hero-sub { font-size: 0.95rem; }
     .btn-primary, .btn-outline-hero { width: 100%; justify-content: center; }
