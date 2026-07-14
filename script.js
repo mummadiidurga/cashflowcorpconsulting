@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const service = document.getElementById('service').value;
             const message = document.getElementById('message').value;
             
-            const whatsappNumber = "918367312435"; // The provided phone number with India country code
+            const whatsappNumber = "919391081985"; // Updated WhatsApp number with India country code
             
             // Format the message for WhatsApp
             const text = `*New Contact Form Submission*%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Service:* ${service}%0A*Message:* ${message}`;
