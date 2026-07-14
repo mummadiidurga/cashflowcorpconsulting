@@ -239,6 +239,20 @@ h3 { font-size: 1.3rem; }
     overflow: hidden;
 }
 
+@media (max-width: 1024px) {
+    .hero {
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 90vh;
+        padding: 100px 0 60px;
+        background-attachment: scroll;
+    }
+}
+
 .hero::before {
     content: '';
     position: absolute;
